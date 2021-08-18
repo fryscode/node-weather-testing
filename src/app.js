@@ -11,6 +11,8 @@ const partial = path.join(__dirname, '../templates/partial')
 const viewqPath = path.join(__dirname, '../templates/views')
 // app.use(express.static(path.join(__dirname, '../public')))
 app.use(express.static('public'))
+const port = process.env.PORT || 3000
+
 
 console.log(path.join(__dirname, '../templates'))
 
@@ -94,6 +96,6 @@ app.get('/product', (req, res) => {
 app.get('*', (req, res) => {
     res.render('404-notfound')
 })
-app.listen(3000, () => {
-    console.log('Listen on port 3000')
+app.listen(port, () => {
+    console.log('Listen on port '+ port)
 })
