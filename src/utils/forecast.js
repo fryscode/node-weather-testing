@@ -11,8 +11,8 @@ const forecast = (latitude, longitude, success) => {
             success('Unable to find location', undefined)
         }
         else {
-
-            success(undefined, "Time Zone " +body.timezone+ ". Temperature " +body.daily[0].temp.day+ ". Weather "+body.daily[0].weather[0].description+ "Name "+body.name)
+            
+            success(undefined, "Time Zone " +body.timezone+ ". Temperature " +body.daily[0].temp.day+ ". Weather "+body.daily[0].weather[0].description+ ". Feels Like " +body.hourly[0].feels_like+ ". UVI "+body.hourly[0].uvi+". Visibility "+body.hourly[0].visibility)
             // success(undefined, {
             //     timezone: body.timezone,
             //     icon: "http://openweathermap.org/img/wn/"+body.daily[0].weather[0].icon+".png",

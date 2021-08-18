@@ -25,7 +25,7 @@ app.set('views', viewqPath)
 
 app.get('/',(req, res) => {
     res.render('home', {
-        title: 'Weather',
+        title: 'Mapbox | OpenMap',
         name: 'Sablon InK'
     })
 })

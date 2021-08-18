@@ -1,11 +1,9 @@
 body {
-  font-style: italic;
-
-  background: blanchedalmond;
-}
-
-.main-content {
-  flex-grow: 1;
+  background: url("/img/ocean.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 /* loader */

@@ -31,7 +31,7 @@ weatherForm.addEventListener('submit', (e) => {
            
             resultOne.textContent = data.location
             resultTwo.textContent = data.forecast
-            resultTree.textContent = data.forecast.name
+            
             
            
            
